@@ -1,0 +1,17 @@
+part of 'bottomnav_bloc.dart';
+
+abstract class BottomnavEvent extends Equatable {
+  const BottomnavEvent();
+
+  @override
+  List<Object> get props => [];
+}
+
+class changePages extends BottomnavEvent {
+  int page;
+
+  changePages({required this.page});
+
+  // @override
+  // List<Object> get props => [page];
+}
